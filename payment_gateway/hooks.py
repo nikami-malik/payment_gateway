@@ -68,7 +68,7 @@ app_license = "mit"
 # ------------
 
 # before_install = "payment_gateway.install.before_install"
-# after_install = "payment_gateway.install.after_install"
+after_install = "payment_gateway.install.after_install"
 
 # Uninstallation
 # ------------
@@ -122,13 +122,17 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+    "Sales Invoice": {
+		"on_submit": "payment_gateway.custom.sales_invoice.create_xendit",
+		# "on_cancel": "nikahmi.custom.customer.remove_link_to_user",
+	}
+}
 
 # Scheduled Tasks
 # ---------------

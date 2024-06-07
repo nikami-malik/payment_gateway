@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-05 17:48:18.450739",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "id_merchant",
+  "is_production",
+  "column_break_xzqq",
+  "client_key",
+  "server_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "id_merchant",
+   "fieldtype": "Data",
+   "label": "Id Merchant",
+   "length": 1
+  },
+  {
+   "fieldname": "column_break_xzqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_key",
+   "fieldtype": "Data",
+   "label": "Client Key",
+   "length": 1
+  },
+  {
+   "fieldname": "server_key",
+   "fieldtype": "Data",
+   "label": "Server key"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_production",
+   "fieldtype": "Check",
+   "label": "Is Production"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-05-10 00:03:20.913562",
+ "modified_by": "Administrator",
+ "module": "Midtrans",
+ "name": "Midtrans Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

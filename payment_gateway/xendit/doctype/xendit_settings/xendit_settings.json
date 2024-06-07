@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-05 15:52:53.120623",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "xendit_send_email",
+  "token"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "xendit_send_email",
+   "fieldtype": "Check",
+   "label": "Xendit Send Email"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Small Text",
+   "label": "Token"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-05-05 15:53:51.365927",
+ "modified_by": "Administrator",
+ "module": "Xendit",
+ "name": "Xendit Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
